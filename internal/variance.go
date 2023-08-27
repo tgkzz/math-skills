@@ -7,5 +7,5 @@ func Variance(numbers []float64, average float64) float64 {
 	for _, number := range numbers {
 		sumOfSquares += math.Pow(number-average, 2)
 	}
-	return sumOfSquares / float64(len(numbers)-1)
+	return sumOfSquares / float64(len(numbers))
 }
